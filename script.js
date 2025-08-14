@@ -26,7 +26,6 @@ const getWord = async () => {
       .then((val) => (wordData = val[0]));
 
     updateDisplay();
-    console.log(wordData);
   }
 };
 
@@ -62,8 +61,7 @@ const updateDisplay = () => {
 
 //Add validation
 const playAudio = () => {
-  console.log(audio.src);
-  if (audio.src !== "http://127.0.0.1:5500/noSrc") {
+  if (audio.src !== `${window.location.href}noSrc`) {
     audio.play();
   } else {
     alert("no audio for this word");
