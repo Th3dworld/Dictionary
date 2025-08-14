@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/dictionary-svgrepo-com.svg"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="contentArea">
+        <div id="searchArea">
+          <textarea
+            id="searchValue"
+            placeholder="search for word"
+            required
+          ></textarea>
+          <button id="search">Check Definition</button>
+        </div>
+        <div id="displayArea">
+          <div id="sound"></div>
+          <audio id="myAudio"></audio>
+          <div id="word"></div>
+          <div id="phonetics">\AbcEfg\</div>
+          <div id="definitions">
+            <div class="definition">
+              <div class="partOfSpeech">noun</div>
+              <div class="explaination">
+                Here is something that might serve as an example
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
